@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://tyler_liquornik:__PASSWORD_HERE__@linkedinscrapercluster.0eqyf.mongodb.net/LinkedInScraperDB?retryWrites=true&w=majority
+logging:
+  level:
+    root: debug
+

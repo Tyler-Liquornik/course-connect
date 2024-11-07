@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc43981f-900c-4f72-95bd-a9dc6477a11c" name="Changes" comment="" />
+    <list default="true" id="bc43981f-900c-4f72-95bd-a9dc6477a11c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/course-connect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/course-connect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -25,21 +32,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.index.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tyler/WebstormProjects/today-i-wanna-be-a/src/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.npm dev.executor&quot;: &quot;Run&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CourseConnectApplication.executor": "Run",
+    "Node.js.index.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/tyler/WebstormProjects/course-connect/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.npm dev.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43793103",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tyler\WebstormProjects\today-i-wanna-be-a\src\assets" />
@@ -48,9 +63,16 @@
       <recent name="C:\Users\tyler\WebstormProjects\today-i-wanna-be-a\frontend" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm dev">
-    <configuration name="index.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../course-connect/frontend/src/index.jsx" working-dir="$PROJECT_DIR$/../course-connect/frontend/src">
+  <component name="RunManager" selected="Spring Boot.Course Connect">
+    <configuration name="index.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="index.jsx" working-dir="$PROJECT_DIR$/frontend/src">
       <method v="2" />
+    </configuration>
+    <configuration name="Course Connect" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="course-connect" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="npm dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -62,6 +84,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.index.jsx" />
+      <item itemvalue="npm.npm dev" />
+      <item itemvalue="Spring Boot.Course Connect" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.index.jsx" />
@@ -71,7 +98,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -90,6 +118,13 @@
       <workItem from="1730936896574" duration="3124000" />
       <workItem from="1730940151298" duration="526000" />
       <workItem from="1730940695269" duration="593000" />
+      <workItem from="1730942315557" duration="199000" />
+      <workItem from="1730942527022" duration="77000" />
+      <workItem from="1730943313482" duration="18000" />
+      <workItem from="1730944060649" duration="75000" />
+      <workItem from="1730944252764" duration="539000" />
+      <workItem from="1730944828391" duration="692000" />
+      <workItem from="1730945933442" duration="178000" />
     </task>
     <servers />
   </component>
