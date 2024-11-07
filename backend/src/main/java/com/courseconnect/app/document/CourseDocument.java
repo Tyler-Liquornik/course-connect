@@ -1,5 +1,6 @@
 package com.courseconnect.app.document;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Data;
 import org.bson.types.ObjectId;
@@ -18,16 +19,16 @@ public class CourseDocument {
 
     @Id
     private ObjectId id;
-
-    private String faculty;
-    private String prefix;
+    private List<ObjectId> courseOutlineIds;
     private int number;
-    private char suffix;
-    private List<CourseDocument> antiRequisiteCourseIds;
-    private List<CourseDocument> preRequisiteCourseIds;
+    private List<Character> suffix;
+    private ObjectId subjectId;
+    private String description;
 
     @CreatedDate
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate createdDate;
     @LastModifiedDate
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate lastModifiedDate;
 }
