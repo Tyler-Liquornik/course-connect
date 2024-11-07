@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/../course-connect/.idea/course-connect.iml" filepath="$PROJECT_DIR$/../course-connect/.idea/course-connect.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/course-connect.iml" filepath="$PROJECT_DIR$/.idea/course-connect.iml" />
+>>>>>>> 3dceb03 (first commit inital frontend)
     </modules>
   </component>
 </project>
