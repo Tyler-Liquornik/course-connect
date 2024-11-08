@@ -1,4 +1,4 @@
-package com.courseconnect.app.document;
+package com.courseconnect.app.document.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
