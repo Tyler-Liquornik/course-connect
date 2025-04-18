@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.4.4'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'com.github.node-gradle.node' version '7.0.2'
+}
+
+group = 'com.courseconnect'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('springAiVersion', "1.0.0-M7")
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.ai:spring-ai-openai'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.4.0'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.ai:spring-ai-bom:${springAiVersion}"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Node configuration for React frontend
+node {
+    version = '20.11.1'
+    download = true
+    workDir = file("${project.buildDir}/nodejs")
+    npmWorkDir = file("${project.buildDir}/npm")
+    nodeProjectDir = file("${project.projectDir}/src/main/frontend")
+}
+
+// Task to install npm dependencies
+task installFrontendDependencies(type: NpmTask) {
+    description = 'Install frontend dependencies'
+    workingDir = file("${project.projectDir}/src/main/frontend")
+    args = ['install']
+}
+
+// Task to build the React frontend
+task buildFrontend(type: NpmTask) {
+    description = 'Build frontend'
+    workingDir = file("${project.projectDir}/src/main/frontend")
+    args = ['run', 'build']
+    dependsOn installFrontendDependencies
+}
+
+// Task to copy the built frontend to the static resources directory
+task copyFrontendBuild(type: Copy) {
+    description = 'Copy frontend build to static resources'
+    from "${project.projectDir}/src/main/frontend/build"
+    into "${project.projectDir}/src/main/resources/static"
+    dependsOn buildFrontend
+}
+
+// Make the processResources task depend on copyFrontendBuild
+processResources.dependsOn copyFrontendBuild
